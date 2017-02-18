@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mGf-hU-ssZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example Table View Controller-->
+        <scene sceneID="ZBk-vW-LJ0">
+            <objects>
+                <viewController id="2dt-cw-uji" customClass="ExampleTableViewController" customModule="DAOExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DIR-pF-YVy"/>
+                        <viewControllerLayoutGuide type="bottom" id="zkI-OQ-nUO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dav-hG-KI5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wi5-VA-nwB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6lT-iQ-rrh"/>
+                                    <barButtonItem title="Добавить Плутон" id="Cax-dW-ds4">
+                                        <connections>
+                                            <action selector="addPluto:" destination="2dt-cw-uji" id="gBw-Fu-WDa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jQu-uY-raS"/>
+                                    <barButtonItem title="Удалить Плутон" id="uNn-cR-Ksd">
+                                        <connections>
+                                            <action selector="deletePluto:" destination="2dt-cw-uji" id="H1w-vO-ywH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oSd-sh-776"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-yn-ra2">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wi5-VA-nwB" firstAttribute="top" secondItem="DIR-pF-YVy" secondAttribute="bottom" id="6iZ-hO-VYr"/>
+                            <constraint firstItem="gLf-yn-ra2" firstAttribute="top" secondItem="Wi5-VA-nwB" secondAttribute="bottom" id="ADP-ql-syE"/>
+                            <constraint firstItem="gLf-yn-ra2" firstAttribute="leading" secondItem="Dav-hG-KI5" secondAttribute="leading" id="KZJ-tx-mPV"/>
+                            <constraint firstItem="Wi5-VA-nwB" firstAttribute="leading" secondItem="Dav-hG-KI5" secondAttribute="leading" id="L5q-mE-Vmm"/>
+                            <constraint firstAttribute="trailing" secondItem="Wi5-VA-nwB" secondAttribute="trailing" id="akl-Um-SuD"/>
+                            <constraint firstItem="zkI-OQ-nUO" firstAttribute="top" secondItem="gLf-yn-ra2" secondAttribute="bottom" id="dVt-Ip-RvE"/>
+                            <constraint firstAttribute="trailing" secondItem="gLf-yn-ra2" secondAttribute="trailing" id="eDI-uC-Zj5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aWP-64-6wL">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Очистить" id="ZNh-Wj-MVO">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clearDB:" destination="2dt-cw-uji" id="FP1-2L-hEZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="ehX-gv-b2a">
+                            <rect key="frame" x="115" y="7" width="145" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Realm"/>
+                                <segment title="CoreData"/>
+                            </segments>
+                            <connections>
+                                <action selector="changeDataBase:" destination="2dt-cw-uji" eventType="valueChanged" id="Siu-ee-xeR"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Заполнить" id="9sm-FB-tH1">
+                            <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="fillDB:" destination="2dt-cw-uji" id="Rn4-Ko-0FI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dataBaseControl" destination="ehX-gv-b2a" id="9mt-Wv-KJO"/>
+                        <outlet property="tableView" destination="gLf-yn-ra2" id="ZfH-Eb-F4z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rm-jI-JuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="241"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6iN-AK-qbL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mGf-hU-ssZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Gi-Ce-l92">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2dt-cw-uji" kind="relationship" relationship="rootViewController" id="seR-bs-N0S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXu-2G-06r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="240.62968515742131"/>
+        </scene>
+    </scenes>
+</document>

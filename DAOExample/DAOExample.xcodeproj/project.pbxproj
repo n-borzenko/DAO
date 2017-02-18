@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E8B558A1E58B94C00A1A654 /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B55891E58B94C00A1A654 /* ExampleTableViewController.swift */; };
+		6E8B558C1E58BA9E00A1A654 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B558B1E58BA9E00A1A654 /* Planet.swift */; };
+		6E8B558E1E58BAF800A1A654 /* PlanetCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B558D1E58BAF800A1A654 /* PlanetCreator.swift */; };
+		6E8B55961E58BCCE00A1A654 /* CDPlanetTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B55951E58BCCE00A1A654 /* CDPlanetTranslator.swift */; };
+		6E8B55981E58BCFA00A1A654 /* RlmPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B55971E58BCFA00A1A654 /* RlmPlanet.swift */; };
+		6E8B559A1E58BD0A00A1A654 /* RlmPlanetTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B55991E58BD0A00A1A654 /* RlmPlanetTranslator.swift */; };
+		6E8B559D1E58C1C300A1A654 /* CDPlanet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B559B1E58C1C300A1A654 /* CDPlanet+CoreDataClass.swift */; };
+		6E8B559E1E58C1C300A1A654 /* CDPlanet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B559C1E58C1C300A1A654 /* CDPlanet+CoreDataProperties.swift */; };
+		6E8B55A01E58C31A00A1A654 /* DAOProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B559F1E58C31A00A1A654 /* DAOProvider.swift */; };
+		6ED082331E58B4890036A30B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED082321E58B4890036A30B /* AppDelegate.swift */; };
+		6ED082381E58B4890036A30B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED082361E58B4890036A30B /* Main.storyboard */; };
+		6ED0823B1E58B4890036A30B /* DAOExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ED082391E58B4890036A30B /* DAOExample.xcdatamodeld */; };
+		6ED0823D1E58B4890036A30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0823C1E58B4890036A30B /* Assets.xcassets */; };
+		6ED082401E58B4890036A30B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED0823E1E58B4890036A30B /* LaunchScreen.storyboard */; };
+		CC6574040A4964F912EA73EA /* Pods_DAOExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F970A7D2532149B57C83D1 /* Pods_DAOExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D9AB0B0716F08F13196F851 /* Pods-DAOExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAOExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DAOExample/Pods-DAOExample.debug.xcconfig"; sourceTree = "<group>"; };
+		64F970A7D2532149B57C83D1 /* Pods_DAOExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAOExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8B55891E58B94C00A1A654 /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
+		6E8B558B1E58BA9E00A1A654 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		6E8B558D1E58BAF800A1A654 /* PlanetCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetCreator.swift; sourceTree = "<group>"; };
+		6E8B55951E58BCCE00A1A654 /* CDPlanetTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDPlanetTranslator.swift; sourceTree = "<group>"; };
+		6E8B55971E58BCFA00A1A654 /* RlmPlanet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RlmPlanet.swift; sourceTree = "<group>"; };
+		6E8B55991E58BD0A00A1A654 /* RlmPlanetTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RlmPlanetTranslator.swift; sourceTree = "<group>"; };
+		6E8B559B1E58C1C300A1A654 /* CDPlanet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDPlanet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6E8B559C1E58C1C300A1A654 /* CDPlanet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDPlanet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6E8B559F1E58C31A00A1A654 /* DAOProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOProvider.swift; sourceTree = "<group>"; };
+		6ED0822F1E58B4890036A30B /* DAOExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAOExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED082321E58B4890036A30B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6ED082371E58B4890036A30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6ED0823A1E58B4890036A30B /* DAOExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DAOExample.xcdatamodel; sourceTree = "<group>"; };
+		6ED0823C1E58B4890036A30B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6ED0823F1E58B4890036A30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6ED082411E58B4890036A30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B47681743A4DE828BE23E7 /* Pods-DAOExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAOExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DAOExample/Pods-DAOExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ED0822C1E58B4880036A30B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6574040A4964F912EA73EA /* Pods_DAOExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		347F6E8544E4B41926870119 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D9AB0B0716F08F13196F851 /* Pods-DAOExample.debug.xcconfig */,
+				98B47681743A4DE828BE23E7 /* Pods-DAOExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53106BBFC31154E4F0120FCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64F970A7D2532149B57C83D1 /* Pods_DAOExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E8B558F1E58BBB800A1A654 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6E8B559B1E58C1C300A1A654 /* CDPlanet+CoreDataClass.swift */,
+				6E8B559C1E58C1C300A1A654 /* CDPlanet+CoreDataProperties.swift */,
+				6E8B55951E58BCCE00A1A654 /* CDPlanetTranslator.swift */,
+				6ED082391E58B4890036A30B /* DAOExample.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6E8B55901E58BBC000A1A654 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				6E8B55971E58BCFA00A1A654 /* RlmPlanet.swift */,
+				6E8B55991E58BD0A00A1A654 /* RlmPlanetTranslator.swift */,
+			);
+			name = Realm;
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		6E8B55A11E58C6F800A1A654 /* PlanetDAO */ = {
+			isa = PBXGroup;
+			children = (
+				6E8B558F1E58BBB800A1A654 /* CoreData */,
+				6E8B55901E58BBC000A1A654 /* Realm */,
+				6E8B559F1E58C31A00A1A654 /* DAOProvider.swift */,
+				6E8B558B1E58BA9E00A1A654 /* Planet.swift */,
+				6E8B558D1E58BAF800A1A654 /* PlanetCreator.swift */,
+			);
+			name = PlanetDAO;
+			path = PlanetDAO;
+			sourceTree = "<group>";
+		};
+		6ED082261E58B4880036A30B = {
+			isa = PBXGroup;
+			children = (
+				6ED082311E58B4890036A30B /* DAOExample */,
+				53106BBFC31154E4F0120FCB /* Frameworks */,
+				347F6E8544E4B41926870119 /* Pods */,
+				6ED082301E58B4890036A30B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6ED082301E58B4890036A30B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ED0822F1E58B4890036A30B /* DAOExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ED082311E58B4890036A30B /* DAOExample */ = {
+			isa = PBXGroup;
+			children = (
+				6E8B55A11E58C6F800A1A654 /* PlanetDAO */,
+				6ED082321E58B4890036A30B /* AppDelegate.swift */,
+				6ED0823C1E58B4890036A30B /* Assets.xcassets */,
+				6E8B55891E58B94C00A1A654 /* ExampleTableViewController.swift */,
+				6ED082411E58B4890036A30B /* Info.plist */,
+				6ED0823E1E58B4890036A30B /* LaunchScreen.storyboard */,
+				6ED082361E58B4890036A30B /* Main.storyboard */,
+			);
+			path = DAOExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6ED0822E1E58B4880036A30B /* DAOExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED082441E58B4890036A30B /* Build configuration list for PBXNativeTarget "DAOExample" */;
+			buildPhases = (
+				C810C3168213EBE269F872ED /* [CP] Check Pods Manifest.lock */,
+				6ED0822B1E58B4880036A30B /* Sources */,
+				6ED0822C1E58B4880036A30B /* Frameworks */,
+				6ED0822D1E58B4880036A30B /* Resources */,
+				3CD1DCA663B92D40B3A5236C /* [CP] Embed Pods Frameworks */,
+				AA0F697B4DFD3024F1845485 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DAOExample;
+			productName = DAOExample;
+			productReference = 6ED0822F1E58B4890036A30B /* DAOExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ED082271E58B4880036A30B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = nborzenko;
+				TargetAttributes = {
+					6ED0822E1E58B4880036A30B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 628AH4U335;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6ED0822A1E58B4880036A30B /* Build configuration list for PBXProject "DAOExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6ED082261E58B4880036A30B;
+			productRefGroup = 6ED082301E58B4890036A30B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ED0822E1E58B4880036A30B /* DAOExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6ED0822D1E58B4880036A30B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED082401E58B4890036A30B /* LaunchScreen.storyboard in Resources */,
+				6ED0823D1E58B4890036A30B /* Assets.xcassets in Resources */,
+				6ED082381E58B4890036A30B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CD1DCA663B92D40B3A5236C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DAOExample/Pods-DAOExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA0F697B4DFD3024F1845485 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DAOExample/Pods-DAOExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C810C3168213EBE269F872ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6ED0822B1E58B4880036A30B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8B55961E58BCCE00A1A654 /* CDPlanetTranslator.swift in Sources */,
+				6E8B558A1E58B94C00A1A654 /* ExampleTableViewController.swift in Sources */,
+				6ED0823B1E58B4890036A30B /* DAOExample.xcdatamodeld in Sources */,
+				6E8B559D1E58C1C300A1A654 /* CDPlanet+CoreDataClass.swift in Sources */,
+				6E8B55A01E58C31A00A1A654 /* DAOProvider.swift in Sources */,
+				6ED082331E58B4890036A30B /* AppDelegate.swift in Sources */,
+				6E8B55981E58BCFA00A1A654 /* RlmPlanet.swift in Sources */,
+				6E8B559E1E58C1C300A1A654 /* CDPlanet+CoreDataProperties.swift in Sources */,
+				6E8B559A1E58BD0A00A1A654 /* RlmPlanetTranslator.swift in Sources */,
+				6E8B558E1E58BAF800A1A654 /* PlanetCreator.swift in Sources */,
+				6E8B558C1E58BA9E00A1A654 /* Planet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6ED082361E58B4890036A30B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ED082371E58B4890036A30B /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		6ED0823E1E58B4890036A30B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6ED0823F1E58B4890036A30B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6ED082421E58B4890036A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ED082431E58B4890036A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6ED082451E58B4890036A30B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9AB0B0716F08F13196F851 /* Pods-DAOExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 628AH4U335;
+				INFOPLIST_FILE = DAOExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DAOExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6ED082461E58B4890036A30B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B47681743A4DE828BE23E7 /* Pods-DAOExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 628AH4U335;
+				INFOPLIST_FILE = DAOExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DAOExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6ED0822A1E58B4880036A30B /* Build configuration list for PBXProject "DAOExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED082421E58B4890036A30B /* Debug */,
+				6ED082431E58B4890036A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED082441E58B4890036A30B /* Build configuration list for PBXNativeTarget "DAOExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED082451E58B4890036A30B /* Debug */,
+				6ED082461E58B4890036A30B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6ED082391E58B4890036A30B /* DAOExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6ED0823A1E58B4890036A30B /* DAOExample.xcdatamodel */,
+			);
+			currentVersion = 6ED0823A1E58B4890036A30B /* DAOExample.xcdatamodel */;
+			path = DAOExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6ED082271E58B4880036A30B /* Project object */;
+}
